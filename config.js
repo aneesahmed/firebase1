@@ -1,6 +1,6 @@
 (function() {
 // Initialize Firebase
-const config = {
+var config = {
   apiKey: "AIzaSyAvLrw5p-brAICU5RYMVTd-ER0oJW2H6f4",
   authDomain: "isupport-50cb7.firebaseapp.com",
   databaseURL: "https://isupport-50cb7.firebaseio.com",
