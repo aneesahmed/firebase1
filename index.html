@@ -6,14 +6,25 @@
  </head>
 
    <body>
-     <div class="mainDiv" align="right">
-       <hl aligh="left">Firebase Web app  </hl>
-        <textarea id="mainText" placeholder="enter text here ..."></textarea>
+     <div class="header" align="center">
+     <hl>Firebase Web app  </hl>
+   </div>
+     <div class="mainDiv" align="center">
+
+        <input id ="id" placeholder="enter user Id"></textarea>
+        <input id="name" placeholder="enter user Name ..."></textarea>
         <button id = "submitBtn" onClick="submitClick()" >submit </button>
+
+      </div>
+      <div  id="userList">
+        <ul>
+
+        </ul>
       </div>
 
-      <script src>
-          const config = {
+      <script>
+  // Initialize Firebase
+          var config = {
             apiKey: "AIzaSyAvLrw5p-brAICU5RYMVTd-ER0oJW2H6f4",
             authDomain: "isupport-50cb7.firebaseapp.com",
             databaseURL: "https://isupport-50cb7.firebaseio.com",
@@ -22,7 +33,7 @@
             messagingSenderId: "133622136386"
           };
           firebase.initializeApp(config);
-
-      </script>
+        </script>
       <script src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </html>
