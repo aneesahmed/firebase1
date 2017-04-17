@@ -4,11 +4,10 @@ var userName = document.getElementById("name")
 var mainobj = document.getElementById("userList")
 
 var firebaseRef = firebase.database().ref('/users');
-
-firebaseRef.on('child_added',function(snapshot) {
-	console.log(snapshot.val());
-	console.log(mainobj);
-	mainobj.innerHTML +=  "<li>" + snapshot.val() + "</li>"
+firebaseRef.on('value',function(snapshot) {
+	//console.log(snapshot.val());
+	
+	mainobj.innerHtml = mainobj.innerHtml + "<li" + snapshot
 	
 }
 );
@@ -23,4 +22,3 @@ function submitClick() {
 	
   
   //window.alert("ting");
-}
